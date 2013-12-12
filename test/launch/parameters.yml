@@ -1,0 +1,4 @@
+- s3-label:
+    description: deploy from prebuilt version on s3
+    #todo: it would be nice to prefill this as enum from s3
+    default: "latest"

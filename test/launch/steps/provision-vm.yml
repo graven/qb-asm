@@ -1,0 +1,12 @@
+action: provisionAmazonVm
+phase: provision
+precedingPhases: [prerequisites]
+parameters:
+    roleName: s3-deploy
+    jcloudsIdentity: ${access-key}
+    jcloudsCredential: ${secret-key}
+    jcloudsNodeNamePrefix: universe
+    imageId: us-east-1/ami-00934969
+    vmIdentity: root
+output:
+    standalone-ip: ips
