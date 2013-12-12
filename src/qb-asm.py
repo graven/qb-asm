@@ -26,4 +26,4 @@ def dict_presenter(dumper, data):
 yaml.add_representer(parsers.clob, literal_presenter) # Y U NO WORK
 yaml.add_representer(PrefixTree, dict_presenter)
 
-print yaml.dump(tree)
+print yaml.dump(tree, default_flow_style=False)
